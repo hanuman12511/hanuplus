@@ -84,14 +84,21 @@
    
             <div class="main-div-last-right">
                 <div class="form-div">
-               <form action="../login" method="post">
+               <form action="../register" method="post">
                     <div class="formproduct">
-                        <h1 style="color:#b3adad">Login</h1>
+                        <h1 style="color:#b3adad">Register</h1>
                         <div class="logo">
                             <img src="../img/icon/profile.png"  alt="">
                         </div>
+
                         <div class="inputform">
                             <img src="../img/icon/icons8-user-100.png"  alt="">
+                            <input type="text" name="name" id="" placeholder="type username..">
+
+
+                        </div>
+                        <div class="inputform">
+                            <img src="../img/icon/icons8-email-100.png"  alt="">
                             <input type="text" name="email" id="" placeholder="type email..">
 
 
@@ -103,12 +110,11 @@
 
                         </div>
                         <div class="inputform">
-                            <input type="submit" value="Login" class="button">
+                            <input type="submit" value="Register" class="button">
 
 
                         </div>
                         <div>
-                            <a href="register.jsp">user not login ? SignUp</a>
                         </div>
 
                     </div>
