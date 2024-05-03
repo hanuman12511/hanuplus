@@ -9,42 +9,43 @@
     .main-div{
         width: 100%;
         height: 600px;
+     
+    }
+ 
+    .logo{
+        width: 100px;
+        height: 100px;
         background-color: aqua;
-
-    }
-    .main-div-top{
-
-        width: 100%;
-        height: 20%;
-        background-color: rgb(60, 255, 0);
-    }
-    .main-div-last{
-        width: 100%;
-        height: 80%;
-        background-color: rgb(255, 0, 234);
         display: inline-flex;
+        margin-bottom: 20px;
+        border-radius: 50px;
     }
-    .main-div-last-left{
-        width: 20%;
-        height: 100%;
-        background-color: rgb(0, 255, 255);
-    }
+
     .main-div-last-right{
-        width: 80%;
+        width: 100%;
         height: 100%;
-        background-color: rgb(202, 202, 202);
         position: relative;
+    }
+
+    .form-div{
+        position: relative;
+        width: 30%;
+        left: 40%;
+        top: 10%;
     }
     .formproduct{
-        width: 30%;
+        
         height: 80%;
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         position: relative;
-        left: 20%;
-        border-radius: 30px;
+        border-radius: 20px;
         text-align: center;
         padding-left: 5%;
         padding-right: 5%;
+        padding-top: 10px;
+        box-shadow: 1px 1px 10px 1px rgb(233, 231, 231);
+    
+       
     }
     .inputform{
         width: 100%;
@@ -54,12 +55,14 @@
         border-radius: 10px;
         border: 1px solid rgb(224, 223, 223);
         align-items: center;
-        padding-left: 20px;
+    
         margin-bottom: 10px;
+       
     }
     .inputform img{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
     }
     input{
         height: 40px;
@@ -78,40 +81,40 @@
     }
    </style>
     <div class="main-div">
-        
-        <div class="main-div-top">
-        </div>
-        <div class="main-div-last">
-            <div class="main-div-last-left">
-                <jsp:include page="menubar.jsp"/>
-            </div>
+   
             <div class="main-div-last-right">
+                <div class="form-div">
                <form action="addproduct" method="post">
                     <div class="formproduct">
-                        <h1>productadd</h1>
+                        <h1 style="color:#b3adad">Login</h1>
+                        <div class="logo">
+                            <img src="../img/icon/profile.png"  alt="">
+                        </div>
                         <div class="inputform">
-                            <img src="./img/icons8-product-100.png"  alt="">
-                            <input type="text" name="productname" id="" placeholder="type product name..">
+                            <img src="../img/icon/icons8-user-100.png"  alt="">
+                            <input type="text" name="email" id="" placeholder="type email..">
 
 
                         </div>
                         <div class="inputform">
-                            <img src="./img/icons8-stack-of-coins-90.png"  alt="">
-                            <input type="text" name="productrate" id="" placeholder="type product rate..">
+                            <img src="../img/icon/icons8-password-100.png"  alt="">
+                            <input type="password" name="password" id="" placeholder="type password...">
 
 
                         </div>
                         <div class="inputform">
-                            <input type="submit" value="Add Product" class="button">
+                            <input type="submit" value="Login" class="button">
 
 
                         </div>
-                        
+                        <div>
+                            <a href="#">user not login ? SignUp</a>
+                        </div>
 
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+     
     </div>
 </body>
 

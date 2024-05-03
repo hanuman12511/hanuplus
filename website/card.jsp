@@ -22,7 +22,7 @@ String pname = resultSet.getString("pname");
    
    <div class="col-lg-3 col-md-6">
     <div class="card" style="width: 100%;">
-        <img src="../img/image1/img1.jpg" class="card-img-top" alt="...">
+        <img src="https://happigo.co/cdn/shop/collections/Cheesy_blast_roasted_makhana.png?v=1711017416&width=535" class="card-img-top" alt="...">
         <div class="card-body">
              <h5 class="card-title"><%=resultSet.getString("pname")%></h5> 
                       <p class="card-text"><%=resultSet.getString("pname")%></p>
