@@ -54,7 +54,7 @@ Connection connection=null;
             }
             if(test){
 
-                Cookie ck=new Cookie("uname","hanu");//creating cookie object  
+                Cookie ck=new Cookie("uname",email);//creating cookie object  
                 ck.setMaxAge(60 * 60 * 24); 
                 response.addCookie(ck);
                 out.print("<script>");

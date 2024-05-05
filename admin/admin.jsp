@@ -78,8 +78,20 @@ if(name!=null){
             width: 100%;
             height: 90%;
             background-color: rgb(59, 252, 1);
+            display: inline-flex;
             
         }
+        .leftbar{
+                width: 20%;
+                height: 100%;
+                background-color: aqua;
+            }
+        
+        .rightbar{
+            height: 100%;
+                width:80%;
+                background-color: rgb(6, 10, 0);
+            }
 
         .profileedit{
            width: 200px;
@@ -105,31 +117,43 @@ if(name!=null){
                    <div class="profile">
                     <img src="../img/account.png" alt="" srcset="">
                     <img src="../img/icon/icons8-arrow-down-90.png" onclick="showprofile()" style="width: 20px;height: 20px;" alt="" srcset="">
+                   
                     <div class="profileedit" id="profile">
-                            <p onclick="close()">close</p>
+                           
                     </div>
 
                 </div>
             </div>
         </div>
-       <!--  <div class="body-div">
+       <div class="body-div">
+        <div class="leftbar">
+            <jsp:include page="leftnavbar.jsp" />
+        </div> 
+        <div class="rightbar">
 
-        </div>  -->
+        </div> 
+
+        </div> 
         </div>
     </div>
 
+<script>
+function showprofile(){
+   var p = document.getElementById('profile') 
+ 
+   if(p.style.display===""){
+   p.style.display="block"
+   }
+   else if(p.style.display==="none"){
+    p.style.display="block"
+   }
+   else{
+    p.style.display="none"
+   }
+}
 
-    <script>
-    
-    function showprofile(){
-        document.getElementById('profile').style.display="block"
-    }
-
-    function close(){
-        document.getElementById('profile').style.display="none"
-        
-    }
-    </script>
+</script>
+  
 </body>
 
 </html>
