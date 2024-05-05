@@ -53,7 +53,10 @@ Connection connection=null;
               
             }
             if(test){
-out.print("login");
+
+                Cookie ck=new Cookie("uname","hanu");//creating cookie object  
+                ck.setMaxAge(60 * 60 * 24); 
+                response.addCookie(ck);
                 out.print("<script>");
                 out.print("alert('user login')");
                 out.print("</script>");

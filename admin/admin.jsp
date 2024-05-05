@@ -1,3 +1,15 @@
+<%
+Cookie ck[]=request.getCookies();  
+String name=null;
+for (Cookie c : ck) { 
+    String tname = c.getName(); 
+    if (tname.equals("uname")) { 
+                name = c.getValue(); 
+    } 
+} 
+if(name!=null){
+%>
+
 <html>
 
 <head>
@@ -80,7 +92,7 @@
         }
        
     </style>
-    
+  
     <div class="main-div">
         <div class="home-div">
          <div class="topbar">
@@ -121,3 +133,17 @@
 </body>
 
 </html>
+
+
+
+<%
+}
+else{
+    response.sendRedirect("login.jsp");
+    %>
+
+  
+
+    <%
+}
+%>
