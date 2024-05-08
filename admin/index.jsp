@@ -7,12 +7,15 @@ for (Cookie c : ck) {
                 name = c.getValue(); 
     } 
 } 
-if(name==null){
-  response.sendRedirect("login.jsp");
 
+out.print("name==="+name);
+if(name==null || name.equals("hanu")){
+ response.sendRedirect("login.jsp");
+ out.print("login");
 
 }
 else{
+  out.print("admin");
     response.sendRedirect("admin.jsp");
 }
 %>

@@ -87,7 +87,7 @@ if(name!=null){
         .rightbar{
             height: 100%;
                 width:80%;
-                background-color: rgb(168, 238, 63);
+                background-color: rgb(6, 10, 0);
             }
 
         .profileedit{
@@ -104,15 +104,13 @@ if(name!=null){
   
     <div class="main-div">
         <div class="home-div">
-      
             <jsp:include page="Top.jsp"/>
-      
-            <div class="body-div">
+       <div class="body-div">
         <div class="leftbar">
             <jsp:include page="leftnavbar.jsp" />
         </div> 
         <div class="rightbar">
-                <h1>Admin</h1>
+            <h1 style="color: beige;">order</h1>
         </div> 
 
         </div> 

@@ -7,7 +7,7 @@ for (Cookie c : ck) {
                 name = c.getValue(); 
     } 
 } 
-if(name==null){
+if(name==null || name.equals("hanu")){
 %>
 
 

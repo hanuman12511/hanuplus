@@ -57,6 +57,8 @@ Connection connection=null;
                 Cookie ck=new Cookie("uname",email);//creating cookie object  
                 ck.setMaxAge(60 * 60 * 24); 
                 response.addCookie(ck);
+
+                
                 out.print("<script>");
                 out.print("alert('user login')");
                 out.print("</script>");

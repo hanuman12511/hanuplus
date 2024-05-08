@@ -7,7 +7,6 @@
     .navbarleft-inner{
         width: 100%;
         height: auto;
-         background-color: aqua;
         text-align: center;
 
     }
@@ -27,47 +26,59 @@
 <div class="navbarleft">
     <div class="navbarleft-inner">  
         <div class="narbar">
+            <a href="admin.jsp" class="narbar">
             <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
             <p>Dashboard</p>
+            </a>
         </div>
 
     </div>
     <div class="navbarleft-inner">  
         <div class="narbar">
+            <a href="product.jsp" class="narbar">
             <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
-            <p>Dashboard</p>
-        </div>
-
-    </div>
-    
-    <div class="navbarleft-inner">  
-        <div class="narbar">
-            <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
-            <p>Dashboard</p>
+            <p>Product</p>
+            </a>
         </div>
 
     </div>
     
     <div class="navbarleft-inner">  
         <div class="narbar">
+            <a href="order.jsp" class="narbar">
             <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
-            <p>Dashboard</p>
+            <p>Order</p>
+            </a>
         </div>
 
     </div>
     
     <div class="navbarleft-inner">  
         <div class="narbar">
+            <a href="customers.jsp" class="narbar">
             <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
-            <p>Dashboard</p>
+            <p>Customer</p>
+            </a>
         </div>
 
     </div>
     
     <div class="navbarleft-inner">  
         <div class="narbar">
+            <a href="seller.jsp" class="narbar">
             <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
-            <p>Dashboard</p>
+            <p>Seller</p>
+            </a>
+        </div>
+
+    </div>
+    
+    <div class="navbarleft-inner">  
+        <div class="narbar">
+            <a href="setting.jsp" class="narbar">
+            <img src="../img/icon/icons8-dashboard-96.png" alt="" srcset="">
+            <p>Setting</p>
+            </a>
         </div>
 
     </div>

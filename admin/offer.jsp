@@ -87,7 +87,7 @@ if(name!=null){
         .rightbar{
             height: 100%;
                 width:80%;
-                background-color: rgb(168, 238, 63);
+                background-color: rgb(6, 10, 0);
             }
 
         .profileedit{
@@ -104,15 +104,30 @@ if(name!=null){
   
     <div class="main-div">
         <div class="home-div">
-      
-            <jsp:include page="Top.jsp"/>
-      
-            <div class="body-div">
+         <div class="topbar">
+            <div class="topbar-left">
+                <span>Admin</span>
+            </div>
+            <div class="topbar-right">
+                <img src="../img/icon/profile.png" alt="" srcset="">
+                <p>User Name</p>
+                   <div class="profile">
+                    <img src="../img/account.png" alt="" srcset="">
+                    <img src="../img/icon/icons8-arrow-down-90.png" onclick="showprofile()" style="width: 20px;height: 20px;" alt="" srcset="">
+                   
+                    <div class="profileedit" id="profile">
+                           
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       <div class="body-div">
         <div class="leftbar">
             <jsp:include page="leftnavbar.jsp" />
         </div> 
         <div class="rightbar">
-                <h1>Admin</h1>
+
         </div> 
 
         </div> 
